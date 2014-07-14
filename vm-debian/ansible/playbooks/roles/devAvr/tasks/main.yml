@@ -1,0 +1,29 @@
+---
+# This playbook will setup the AVR development environment
+
+- name: Install gcc-avr cross-compiler
+  apt: name=gcc-avr state=latest
+  tags: AVR
+
+- name: Install gdb-avr debugger
+  apt: name=gdb-avr state=latest
+  tags: AVR
+
+- name: Install avarice, the AVR In-Ciruit Emulator
+  apt: name=avarice state=latest
+  tags: AVR
+
+- name: Install avrdude
+  apt: name=avrdude state=latest
+  tags: AVR
+
+- name: Install avrdude documentation
+  apt: name=avrdude-doc state=latest
+  tags: AVR
+
+- name: Install flashrom
+  apt: name=flashrom state=latest
+  tags: Embedded
+
+  
+  
