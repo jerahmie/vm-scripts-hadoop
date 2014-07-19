@@ -11,6 +11,10 @@
   
 - name: Install gcc
   apt: name=gcc state=latest
+  tags: gcc 
+
+- name: Install g++
+  apt: name=g++ state=latest
   tags: gcc
   
 - name: Install gfortran
@@ -32,11 +36,3 @@
 - name: Install install emacs dictionary
   apt: name=hunspell-en-us state=latest
   tags: editors  
-
-- name: Install atlas 
-  apt: name=libatlas-dev state=latest
-  tags: dev-libraries
-
-- name: Install lapack
-  apt: name=liblapack-dev state=latest
-  tags: dev-libraries
