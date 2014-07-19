@@ -1,0 +1,54 @@
+---
+# This playbook will set up development tools for plasma physics codes
+
+- name: Install unzip
+  apt: name=unzip state=latest
+  tags: utils
+
+- name: Install make
+  apt: name=make state=latest
+  tags: utils
+  
+- name: Install gcc
+  apt: name=gcc state=latest
+  tags: gcc 
+
+- name: Install g++
+  apt: name=g++ state=latest
+  tags: gcc
+  
+- name: Install gfortran
+  apt: name=gfortran state=latest
+  tags: gfortran
+
+- name: Install gdb
+  apt: name=gdb state=latest
+  tags: gdb
+
+- name: Install emacs
+  apt: name=emacs state=latest
+  tags: editors
+
+- name: Install install emacs dictionary
+  apt: name=hunspell state=latest
+  tags: editors
+  
+- name: Install install emacs dictionary
+  apt: name=hunspell-en-us state=latest
+  tags: editors  
+
+- name: Install atlas 
+  apt: name=libatlas-dev state=latest
+  tags: dev-libraries
+
+- name: Install lapack
+  apt: name=liblapack-dev state=latest
+  tags: dev-libraries
+
+- name: Install ncurses-dev
+  apt: name=libncurses5-dev state=latest
+  tags: dev-libraries
+
+- name: Install iasl
+  apt: name=iasl state=latest
+  tags: compilers
