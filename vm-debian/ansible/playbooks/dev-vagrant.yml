@@ -6,4 +6,5 @@
   roles:
     - base
     - devEnv
+    - devAvr
     - devCoreboot
