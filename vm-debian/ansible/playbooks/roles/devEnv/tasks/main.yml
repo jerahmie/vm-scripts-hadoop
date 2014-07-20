@@ -17,10 +17,6 @@
   apt: name=g++ state=latest
   tags: gcc
   
-- name: Install gfortran
-  apt: name=gfortran state=latest
-  tags: gfortran
-
 - name: Install gdb
   apt: name=gdb state=latest
   tags: gdb
