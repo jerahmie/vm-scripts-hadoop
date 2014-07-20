@@ -2,6 +2,18 @@
 # This playbook will set up development tools required specifically for
 # Coreboot 
 
+- name: Install bison
+  apt: name=bison state=latest
+  tags: dev-tools
+
+- name: Install flex
+  apt: name=flex state=latest
+  tags: dev-tools
+
+- name: Install build-essential
+  apt: name=build-essential state=latest
+  tags: dev-tools
+
 - name: Install ncurses-dev
   apt: name=libncurses5-dev state=latest
   tags: dev-libraries
