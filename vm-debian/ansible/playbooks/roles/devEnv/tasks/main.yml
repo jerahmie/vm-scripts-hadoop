@@ -25,6 +25,10 @@
   apt: name=gdb state=latest
   tags: gdb
 
+- name: Install subversion
+  apt: name=subversion state=latest
+  tags: utils
+  
 - name: Install emacs
   apt: name=emacs state=latest
   tags: editors
