@@ -21,6 +21,10 @@
   apt: name=gdb state=latest
   tags: gdb
 
+- name Install python3
+  apt: name=python3
+  tags: compilers
+
 - name: Install subversion
   apt: name=subversion state=latest
   tags: utils
@@ -33,6 +37,7 @@
   apt: name=hunspell state=latest
   tags: editors
   
-- name: Install install emacs dictionary
+- name: Install emacs dictionary
   apt: name=hunspell-en-us state=latest
   tags: editors  
+
