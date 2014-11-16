@@ -22,7 +22,7 @@
   tags: gdb
 
 - name Install python3
-  apt: name=python3
+  apt: name=python3 state=latest
   tags: compilers
 
 - name: Install subversion
